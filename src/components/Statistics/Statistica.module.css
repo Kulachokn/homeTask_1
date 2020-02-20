@@ -1,0 +1,42 @@
+.statistics {
+    margin-top: 20px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+}
+
+.title {
+    text-transform: uppercase;
+    color: lightslategrey;
+    font-size: 16px;
+    font-family: ".AppleSystemUIFont";
+    font-weight: bold;
+
+}
+
+.statList {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.item {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background-color: lightslategrey;
+    padding: 10px 15px;
+}
+
+.label {
+    color: #ffffff;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+
+.percentage {
+    color: #ffffff;
+    font-size: 18px;
+}

@@ -1,19 +1,23 @@
 import React from "react";
 import PropTypes from 'prop-types';
+import styles from "../Statistics/Statistica.module.css"
 
 function Statistics({title, stats}) {
     return (
-        <section>
-            {title && <h2>{title}</h2>}
-            <ul>
-                {stats.map(stat => <li key={stat.id}>
-                    <span>{stat.label}</span><span>{stat.percentage}%</span></li>)}
+        <section className={styles.statistics}>
+            {title && <h2 className={styles.title}>{title}</h2>}
+            <ul className={styles.statList}>
+                {stats.map(stat =>
+                    <li key={stat.id} className={styles.item}>
+                    <span className={styles.label}>{stat.label}</span>
+                        <span className={styles.percentage}>{stat.percentage}%</span>
+                    </li>)}
             </ul>
         </section>
     );
 }
 
-Statistics.prototype = {
+Statistics.propTypes = {
     title: PropTypes.string,
     stats: PropTypes.arrayOf(PropTypes.exact({
         id: PropTypes.string.isRequired,

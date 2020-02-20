@@ -1,0 +1,41 @@
+.transactionHistory {
+    border-spacing: 1px;
+}
+
+.transactionHistory thead {
+    background-color: #87CEFA;
+}
+
+.transactionHistory tbody {
+    border-right: 2px solid #778899;
+    border-left: 2px solid #778899;
+}
+
+.transactionHistory th {
+    color: #ffffff;
+    font-size: 12px;
+    font-family: ".AppleSystemUIFont";
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 12px;
+    width: 150px;
+    border: none;
+}
+
+.transactionHistory td::first-letter {
+    font-size: 16px;
+}
+
+.transactionHistory td {
+    border-spacing: 0;
+    color: lightslategrey;
+    text-align: center;
+}
+
+.transactionHistory tr:nth-child(2n) {
+    background-color: #F0F8FF;
+}
+
+/*.currency {*/
+/*    border-right: 1px solid #778899;*/
+/*}*/
